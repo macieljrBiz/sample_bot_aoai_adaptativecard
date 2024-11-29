@@ -1,8 +1,10 @@
-# echo_bot
+# sample_bot_aoai_adaptativecard
 
 Demonstrate the core capabilities of the Microsoft Bot Framework
 
 This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to create a simple bot that accepts input from the user and echoes it back.
+
+Also, it demonstrates hot to integrate it with AOAI endpoint as well as the use of AdaptativeCards to format bot's responses.
 
 ## Prerequisites
 
