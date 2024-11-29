@@ -45,7 +45,7 @@ This sample **requires** prerequisites in order to run.
 
 - Publish this code using some preffered service for [continuous integration on Azure and GitHub](https://learn.microsoft.com/pt-br/azure/bot-service/bot-service-build-continuous-deployment?view=azure-bot-service-4.0). If you domain the related security risks and concerns, you can make use of services like [ngrok](https://ngrok.com) just for testing purposes.
 - [Set up the Bot Service](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-4.0&tabs=userassigned) and configure the Teams channel.
-- After that you need to get the AppID and Password in the Bot Service's Settings > Configuration (you need to click "Manage Password" to acquire the password, and set it in the `config.py`.
+- After that you need to get the AppID and Password in the Bot Service's Settings > Configuration (you need to click "Manage Password" to acquire the password), and set it in the `config.py`.
 
 
 ### Further reading
