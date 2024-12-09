@@ -1,6 +1,6 @@
-# sample_bot_aoai_adaptativecard
+# sample_bot_aoai_adaptivecard
 
-Demonstrate the core capabilities of the Microsoft Bot Framework connected with and AOAI Service, to implement a Chat with LLM of choice and demonstrates the usage of the AdaptativeCards for the chat output formatting.
+Demonstrate the core capabilities of the Microsoft Bot Framework connected with and AOAI (Azure Open AI) Service, to implement a Chat with LLM of choice and demonstrates the usage of the AdaptiveCards for the chat output formatting.
 
 This bot has been created using [Bot Framework](https://dev.botframework.com), originally it shows how to create a simple bot that accepts input from the user and echoes it back. This one is modified to implement instead, answers from a LLM like AOAI GPT. The original code is preserved but is commented.
 
@@ -18,11 +18,14 @@ This sample **requires** prerequisites in order to run.
    - `ENDPOINT_URL` your Azure OpenAI published endpoint
    - `DEPLOYMENT_NAME` the name you created for the model you published you want to use
    - `API_VERSION` the API version you want to use. At the time of the creation of this code, the recommended version was: '2024-05-01-preview'
-   - `CHAT_ADAPTATIVE_CARD_IMAGE_URL` the URL of an image (190x74 recommended) used as the bot's signature in the chat's adaptative card.
+   - `CHAT_ADAPTATIVE_CARD_IMAGE_URL` the URL of an image (190x74 recommended) used as the bot's signature in the chat's adaptive card.
 
-## Set Managed Identity permissions
+## Set Managed Identity (MI) permissions
 - This code implements Managed Identity to avoid the insecure transit of keys
+- The Managed Identity in this code is used to implement authentication to AOAI without need to pass an API key
+- The code is already as it needs to be. No implementation required, but you need to perform configurations at the Azure Portal to make it work.
 - Check this reference to implement: [How to configure Azure OpenAI Service with Microsoft Entra ID authentication](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/managed-identity)
+- Basically you need to create an MI, go to AOAI IAM, add "Cognitive Services OpenAI User" access to your user on it and authenticate with the Azure CLI (`az login`) with that user before running the code. 
 
 ## Running the sample
 - Run `pip install -r requirements.txt` to install all dependencies
