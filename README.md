@@ -10,14 +10,17 @@ This sample **requires** prerequisites in order to run.
 
 ### Install Python 3.6
 
+## Deploy an AOAI resource and a suitable model
+- Deploy a model such as GPT-4, GPT-4o, GPT-4o-mini, etc
+
 ## Set environment variables
 - This code uses some variables in the .env file that needs to be set
 - For security, copy the .env file as DEBUG.env file (make sure it's not commited to your versioning control). This helps to mantain your endpoint information private on development environment.
 - ONLY use the default .env file on production (starting the app without the "--debug" flag).
 - The variables is:
-   - `ENDPOINT_URL` your Azure OpenAI published endpoint
-   - `DEPLOYMENT_NAME` the name you created for the model you published you want to use
-   - `API_VERSION` the API version you want to use. At the time of the creation of this code, the recommended version was: '2024-05-01-preview'
+   - `ENDPOINT_URL` your chosen Azure OpenAI endpoint (such as: https://aoai-deploy-name.openai.azure.com)
+   - `DEPLOYMENT_NAME` the name you created for the deployed model you want to use (such as gpt-4o-mini)
+   - `API_VERSION` the deploy's API version. (such as: 2024-05-01-preview)
    - `CHAT_ADAPTATIVE_CARD_IMAGE_URL` the URL of an image (190x74 recommended) used as the bot's signature in the chat's adaptive card.
 
 ## Set Managed Identity (MI) permissions
