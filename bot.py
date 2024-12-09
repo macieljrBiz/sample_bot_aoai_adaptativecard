@@ -18,7 +18,7 @@ class MyBot(ActivityHandler):
     # custom code to interact with azure openai endpoint
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.chat_image = os.getenv("CHAT_ADAPTATIVE_CARD_IMAGE_URL")
+        self.chat_image = os.getenv("CHAT_ADAPTIVE_CARD_IMAGE_URL")
         self.openai_endpoint = os.getenv("ENDPOINT_URL")
         self.openai_deployment = os.getenv("DEPLOYMENT_NAME")
         self.openai_api_version = os.getenv("API_VERSION")
