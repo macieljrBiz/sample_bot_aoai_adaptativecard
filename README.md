@@ -1,10 +1,8 @@
 # sample_bot_aoai_adaptativecard
 
-Demonstrate the core capabilities of the Microsoft Bot Framework
+Demonstrate the core capabilities of the Microsoft Bot Framework connected with and AOAI Service, to implement a Chat with LLM of choice and demonstrates the usage of the AdaptativeCards for the chat output formatting.
 
-This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to create a simple bot that accepts input from the user and echoes it back.
-
-Also, it demonstrates hot to integrate it with AOAI endpoint as well as the use of AdaptativeCards to format bot's responses.
+This bot has been created using [Bot Framework](https://dev.botframework.com), originally it shows how to create a simple bot that accepts input from the user and echoes it back. This one is modified to implement instead, answers from a LLM like AOAI GPT. The original code is preserved but is commented.
 
 ## Prerequisites
 
@@ -40,13 +38,6 @@ This sample **requires** prerequisites in order to run.
 
 - Launch Bot Framework Emulator
 - Enter a Bot URL of `http://localhost:3978/api/messages`
-
-### Testing with Teams
-
-- Publish this code using some preffered service for [continuous integration on Azure and GitHub](https://learn.microsoft.com/pt-br/azure/bot-service/bot-service-build-continuous-deployment?view=azure-bot-service-4.0). If you domain the related security risks and concerns, you can make use of services like [ngrok](https://ngrok.com) just for testing purposes.
-- [Set up the Bot Service](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-4.0&tabs=userassigned) and configure the Teams channel.
-- After that you need to get the AppID and Password in the Bot Service's Settings > Configuration (you need to click "Manage Password" to acquire the password), and set it in the `config.py`.
-
 
 ### Further reading
 
